@@ -146,6 +146,8 @@
     	}
     	
     	.form-search:hover .input-search {
+    		//display: inline;
+    		visibility: visible;
     		width: 170px;
     		transition: width 1s ease-out;
     		background-position: right;
@@ -157,6 +159,11 @@
     	}
     	
     	.input-search {
+    		visibility: hidden;
+    		//display: none;
+    		position: absolute;
+    		top: 34px;
+    		left: -39px;
     		width: 0px;
     		height: 30px;
     		outline: none;
@@ -170,6 +177,7 @@
     	.form-search {
     		float: left;
     		margin: 10px 0 0 20px;
+    		position: relative;
     	}
     	
     	.div-logo-nav:after {
@@ -184,12 +192,6 @@
     		flex-direction: row;
     		justify-content: space-around;
     		margin-top: 278px;
-    	}
-    	
-    	.arrows {
-    		width: 60px;
-    		height: 300px;
-    		text-align: center;
     	}
     	
     	.slider-text {
@@ -297,7 +299,7 @@
     		width: 100%;
     		display: flex;
     		justify-content: center;
-    		margin-top: 296px;
+    		margin-top: 330px;
     	}
     	
     	.pagination-item {
@@ -336,6 +338,12 @@
     		padding-top: 80px;
     	}
     	
+    	//.services:after {
+    	//	content: "";
+    	//	display: block;
+    	//	width: 100%;
+    	//	clear: both;
+    	//}
     	.services-items:nth-child(2n) {
     		margin-left: 14px;
     		margin-right: 14px;
@@ -405,4 +413,156 @@
     	
     	.customization-items {
     		padding: 5px 0px 0px 10px;
+    	}
+    	
+    	.ideas {
+    		width: 100%;
+    		min-height: 698px;
+    		background-color: #fbfaf8;
+    		position: relative;
+    		//	border: 1px solid black;
+    	}
+    	
+    	.ideas:before {
+    		content: "";
+    		display: block;
+    		width: 100%;
+    		clear: both;
+    	}
+    	
+    	.ideas-text-one {
+    		font-family: Raleway;
+    		font-size: 31px;
+    		line-height: 1.2;
+    		font-weight: 600;
+    		color: #555555;
+    		text-align: center;
+    		display: block;
+    		width: 100%;
+    		padding-top: 75px;
+    	}
+    	
+    	.ideas-text-two {
+    		font-family: Montserrat;
+    		font-size: 15px;
+    		line-height: 27px;
+    		font-weight: 300;
+    		color: #8c8c8c;
+    		text-align: center;
+    		display: block;
+    		padding: 17px 576px 0 577px;
+    	}
+    	
+    	.ideas-browser-left {
+    		position: absolute;
+    		width: 770px;
+    		height: 400px;
+    		background-image: url(../img/browser_left_10769.png);
+    		top: 298px;
+    		left: 348px;
+    		z-index: 1;
+    	}
+    	
+    	.ideas-browser-right {
+    		position: absolute;
+    		width: 770px;
+    		height: 400px;
+    		background-image: url(../img/browser_right_10770.png);
+    		top: 298px;
+    		left: 807px;
+    		z-index: 1;
+    	}
+    	
+    	.ideas-browser-center {
+    		position: absolute;
+    		width: 770px;
+    		height: 482px;
+    		background-image: url(../img/browser_center_10768.png);
+    		top: 216px;
+    		left: 576px;
+    		z-index: 1;
+    	}
+    	
+    	.ideas-browser-left:hover {
+    		z-index: 2;
+    	}
+    	
+    	.ideas-browser-right:hover {
+    		z-index: 2;
+    	}
+    	
+    	.ideas-browser-center:hover {
+    		z-index: 2;
+    	}
+    	
+    	.aside-text-boxes {
+    		width: 100%;
+    		min-height: 150px;
+    		background-color: #f4f5f8;
+    		background-image: linear-gradient(90.0deg, #211b19 0%, #4e3427 100%);
+    		padding: 41px 0 0 376px;
+    		box-sizing: border-box;
+    		position: relative;
+    	}
+    	
+    	.aside-text-one {
+    		width: 530px;
+    		font-family: Raleway;
+    		font-size: 28px;
+    		line-height: 1.2;
+    		font-weight: 400;
+    		color: #ffffff;
+    		display: block;
+    	}
+    	
+    	.aside-text-one:before {
+    		content: "Waxom ";
+    		font-family: Raleway;
+    		font-size: 28px;
+    		line-height: 1.2;
+    		font-weight: 400;
+    		color: #c7b299;
+    	}
+    	
+    	.aside-text-one:hover {
+    		color: #c7b299;
+    	}
+    	
+    	.aside-text-two {
+    		width: 670px;
+    		font-family: Montserrat;
+    		font-size: 17.5px;
+    		line-height: 2;
+    		font-weight: 300;
+    		color: #615855;
+    		display: block;
+    	}
+    	
+    	.aside-button {
+    		position: absolute;
+    		top: 49px;
+    		left: 1376px;
+    		width: 170px;
+    		height: 50px;
+    		background-color: #998675;
+    		border-radius: 3.0px;
+    		font-family: Raleway;
+    		font-size: 14px;
+    		line-height: 23px;
+    		font-weight: 800;
+    		text-transform: uppercase;
+    		color: #ffffff;
+    		text-align: center;
+    		border: none;
+    		outline: none;
+    	}
+    	
+    	.aside-button:hover {
+    		background-color: #c7b299;
+    		color: #ffffff;
+    	}
+    	
+    	.aside-button:active {
+    		background-color: #5f5141;
+    		color: #837e79;
     	}
